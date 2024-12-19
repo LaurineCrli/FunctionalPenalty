@@ -1,0 +1,13 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Functional_Penalty/FileContentIndex/fd6147e0-41e3-4516-9c6a-5c3808e406b6.vsidx
+/.vs/Functional_Penalty/v17/.wsuo
+/.vs/Functional_Penalty/v17/DocumentLayout.backup.json
+/.vs/Functional_Penalty/v17/DocumentLayout.json
+*.json
+*.sqlite
+*.vsidx
+*.suo
+*.sln
