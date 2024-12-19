@@ -58,7 +58,7 @@ Victoire : Équipe A (Score : 3/2)
 -  Dossier **`Models`** : Contient les classes suivantes 
    - **`PenaltyShootout.cs`** : Contient la logique principale de la simulation.
    - **`Option.cs`** : Implémentation du pattern Option pour gérer les erreurs fonctionnellement.
-- Projet **`Tests`** : Ensemble de tests unitaires validant le comportement des fonctions principales.
+- Classe **`PenaltyShootoutTests`** : Ensemble de tests unitaires validant le comportement des fonctions principales.
 
 ## Concepts de programmation fonctionnelle
 
