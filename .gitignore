@@ -11,3 +11,6 @@
 *.vsidx
 *.suo
 *.sln
+/CARLIER_Laurine_Functional_Penalty/.vs/CARLIER_Laurine_Functional_Penalty
+/CARLIER_Laurine_Functional_Penalty/PenaltyShootoutTests/bin/Debug/net8.0
+/CARLIER_Laurine_Functional_Penalty/PenaltyShootoutTests/obj
