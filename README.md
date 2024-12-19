@@ -17,7 +17,7 @@ L'objectif est de respecter les principes de la programmation fonctionnelle, tel
 
 - **Framework .NET** : Version 8.0.
 - **Outils de test** : MSTests (pour les tests unitaires).
-- 
+  
 ## Prérequis
 
 - Visual Studio v17.12
