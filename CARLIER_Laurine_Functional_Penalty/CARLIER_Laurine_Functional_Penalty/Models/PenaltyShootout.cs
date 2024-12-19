@@ -13,14 +13,14 @@
 
         public static State PlayShootout(State state)
         {
-            // Base case: Check if the game is over
+            // Vérification de la fin du jeu
             if (IsGameOver(state)) return state;
 
-            // Simulate a shot for each team
+            // Simulation d'un tir pour chaque équipe
             var teamAShot = SimulateShot();
             var teamBShot = SimulateShot();
 
-            // Update scores and history
+            // Mise à jour des scores et de l'historique
             var newTeamAScore = state.TeamAScore + (teamAShot ? 1 : 0);
             var newTeamBScore = state.TeamBScore + (teamBShot ? 1 : 0);
             var newHistory = state.History.Append($"Tir {state.ShotsTaken + 1}: Score: {newTeamAScore}/{newTeamBScore} " +
@@ -34,16 +34,16 @@
                 History = newHistory
             };
 
-            return PlayShootout(newState); // Recursive call
+            return PlayShootout(newState); // Appel récursif
         }
 
         public static bool IsGameOver(State state)
         {
-            // Check if maximum shots have been taken and scores are unequal
+            // Vérification de si le nombre de tirs maximum a été atteint et si les scores sont inégaux
             if (state.ShotsTaken >= MaxShots && state.TeamAScore != state.TeamBScore)
                 return true;
 
-            // Check if one team has an insurmountable lead
+            // Vérification de si une équipe a un avantage conséquent / insurmontable
             var remainingShots = MaxShots - state.ShotsTaken;
             if (state.TeamAScore > state.TeamBScore + remainingShots ||
                 state.TeamBScore > state.TeamAScore + remainingShots)
@@ -54,7 +54,7 @@
 
         public static bool SimulateShot()
         {
-            // Simulate a random shot result (true = scored, false = missed)
+            // Simulation d'un tir aléatoire
             return new Random().Next(2) == 1;
         }
 
@@ -72,7 +72,7 @@
                 return;
             }
 
-            // Tente d'extraire les scores avec une validation
+            // Tentative d'extraction des scores avec une validation
             var parts = lastLine.Split(':');
             if (parts.Length < 2)
             {
@@ -90,7 +90,7 @@
                 return;
             }
 
-            // Affiche le résultat final
+            // Affichage du résultat final
             Console.WriteLine($"Victoire: {(teamAScore > teamBScore ? "Équipe A" : "Équipe B")} (Score: {teamAScore}/{teamBScore})");
         }
 
