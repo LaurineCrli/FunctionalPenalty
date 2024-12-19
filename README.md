@@ -15,32 +15,13 @@ L'objectif est de respecter les principes de la programmation fonctionnelle, tel
 
 ## Exigences
 
-- **Framework .NET** : Version 6.0 ou supérieure.
-- **Outils de test** : NUnit ou xUnit (pour les tests unitaires).
+- **Framework .NET** : Version 8.0.
+- **Outils de test** : MSTests (pour les tests unitaires).
+- 
+## Prérequis
 
-## Installation et exécution
-
-1. **Cloner le projet** :
-   ```bash
-   git clone https://github.com/votre-repo/penalty-shootout-simulation.git
-   cd penalty-shootout-simulation
-   ```
-
-2. **Restaurer les dépendances** :
-   ```bash
-   dotnet restore
-   ```
-
-3. **Exécuter le projet** :
-   ```bash
-   dotnet run
-   ```
-
-4. **Exécuter les tests unitaires** :
-   ```bash
-   dotnet test
-   ```
-
+- Visual Studio v17.12
+  
 ## Utilisation
 
 Lorsque vous exécutez le projet, une séance de tirs au but est simulée automatiquement. Voici un exemple de sortie :
@@ -55,10 +36,10 @@ Victoire : Équipe A (Score : 3/2)
 ```
 
 ## Structure du projet
--  Dossier **`Models`** : Contient les classes suivantes 
+- Dossier **`Models`** : Contient les classes suivantes 
    - **`PenaltyShootout.cs`** : Contient la logique principale de la simulation.
    - **`Option.cs`** : Implémentation du pattern Option pour gérer les erreurs fonctionnellement.
-- Classe **`PenaltyShootoutTests`** : Ensemble de tests unitaires validant le comportement des fonctions principales.
+- Projet **`PenaltyShootoutTests`** : Ensemble de tests unitaires validant le comportement des fonctions principales.
 
 ## Concepts de programmation fonctionnelle
 
