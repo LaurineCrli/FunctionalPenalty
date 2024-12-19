@@ -1,4 +1,5 @@
 # Projet : Simulation de tirs au but en programmation fonctionnelle
+## Examen réalisé par Laurine CARLIER - M2I
 
 Ce projet propose une simulation d'une séance de tirs au but dans un match de football, avec une approche fonctionnelle en C#.
 L'objectif est de respecter les principes de la programmation fonctionnelle, tels que l'immuabilité, les fonctions pures, et la gestion des erreurs sans exceptions.
