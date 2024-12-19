@@ -37,7 +37,7 @@
             return PlayShootout(newState); // Recursive call
         }
 
-        private static bool IsGameOver(State state)
+        public static bool IsGameOver(State state)
         {
             // Check if maximum shots have been taken and scores are unequal
             if (state.ShotsTaken >= MaxShots && state.TeamAScore != state.TeamBScore)
@@ -52,7 +52,7 @@
             return false;
         }
 
-        private static bool SimulateShot()
+        public static bool SimulateShot()
         {
             // Simulate a random shot result (true = scored, false = missed)
             return new Random().Next(2) == 1;
