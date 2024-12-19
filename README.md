@@ -35,6 +35,18 @@ Tir 5 : Score : 3/2 (Équipe A : +1 | Équipe B : 0)
 Victoire : Équipe A (Score : 3/2)
 ```
 
+Pour exécuter le projet : 
+- Il est possible de cliquer sur le bouton play en haut de l'écran
+- Sinon, le raccourci CTRL + F5 permet de lancer la solution
+
+La console s'ouvre automatiquement, affichant les résultats. 
+
+Pour exécuter les tests : 
+- Dans l'arborescence à droite, faire un clic droit sur le projet de tests **`PenaltyShootoutTests`**
+- Puis cliquer sur "Exécuter les tests"
+
+Une fenêtre s'ouvre, affichant les résultats des tests.
+
 ## Structure du projet
 - Dossier **`Models`** : Contient les classes suivantes 
    - **`PenaltyShootout.cs`** : Contient la logique principale de la simulation.
